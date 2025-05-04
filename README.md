@@ -17,6 +17,12 @@
 
 <p>CoverLetter AI is a sophisticated application that leverages artificial intelligence to streamline the job application process. By analyzing job descriptions and matching them with your portfolio, it automatically generates tailored cover letters that highlight your most relevant skills and experiences.</p>
 
+</br>
+
+<img src="demo1.png" alt="CoverLetter AI 1" />
+
+</br>
+
 <h2>Project Overview</h2>
 
 <p>This tool uses advanced natural language processing to extract key information from job postings, including required skills, experience levels, and responsibilities. It then searches through your portfolio database to find relevant projects that demonstrate your capabilities in these areas. Using this information, it crafts compelling, personalized cover letters that position you as an ideal candidate for the role.</p>
