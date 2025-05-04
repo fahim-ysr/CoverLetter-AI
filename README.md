@@ -27,8 +27,6 @@
 
 <p>This tool uses advanced natural language processing to extract key information from job postings, including required skills, experience levels, and responsibilities. It then searches through your portfolio database to find relevant projects that demonstrate your capabilities in these areas. Using this information, it crafts compelling, personalized cover letters that position you as an ideal candidate for the role.</p>
 
-<p><strong>Multi-language Support:</strong> If the job description is in a different language, CoverLetter AI will automatically process it and generate the cover letter in English, ensuring seamless application to international opportunities.</p>
-
 <p>The application features a clean, intuitive Streamlit interface that makes it accessible to users regardless of their technical background.</p>
 
 <h2>Key Features</h2>
@@ -38,6 +36,7 @@
   <li><strong>Intelligent Skill Matching</strong>: Identifies the most relevant portfolio projects that match job requirements</li>
   <li><strong>Personalized Cover Letter Generation</strong>: Creates tailored cover letters highlighting specific matching experience</li>
   <li><strong>Portfolio Integration</strong>: Automatically incorporates relevant portfolio links to showcase past work</li>
+<li><strong>Multi-language Support</strong>: If the job description is in a different language, CoverLetter AI will automatically process it and generate the cover letter in English, ensuring seamless application to international opportunities</li>
   <li><strong>Streamlined Workflow</strong>: Reduces the time spent on research and cover letter composition from hours to minutes</li>
 </ul>
 
