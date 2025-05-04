@@ -87,6 +87,7 @@
 
 <ul>
     <li>Multi-language support</li>
+    <li>Create a virtual environment</li>
     <li>Resume optimization suggestions</li>
     <li>Interview preparation based on job requirements</li>
     <li>Application tracking system</li>
