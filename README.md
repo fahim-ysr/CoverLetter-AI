@@ -77,6 +77,7 @@
 
 <ol>
     <li>Clone this repository</li>
+    <li>Create a virtual environment</li>
     <li>Install requirements: <code>pip install -r requirements.txt</code></li>
     <li>Create a <code>.env.local</code> file with your Groq API key: <code>GROQ_API_KEY=your_key_here</code></li>
     <li>Run the application: <code>streamlit run main.py</code></li>
@@ -87,7 +88,6 @@
 
 <ul>
     <li>Multi-language support</li>
-    <li>Create a virtual environment</li>
     <li>Resume optimization suggestions</li>
     <li>Interview preparation based on job requirements</li>
     <li>Application tracking system</li>
