@@ -15,7 +15,7 @@
   <li><strong>Application Fatigue</strong>: Quality deteriorates after 7-10 applications, reducing success rates</li>
 </ul>
 
-<p>CoverLetter AI is a sophisticated application that leverages artificial intelligence to streamline the job application process. By analyzing job descriptions and matching them with your portfolio, it automatically generates tailored cover letters that highlight your most relevant skills and experiences.</p>
+<p>CoverLetter AI leverages artificial intelligence to streamline the job application process. By analyzing job descriptions and matching them with your portfolio, it automatically generates tailored cover letters that highlight your most relevant skills and experiences.</p>
 
 </br>
 
