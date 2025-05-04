@@ -19,7 +19,7 @@
 
 </br>
 
-<img src="demo1.png" alt="CoverLetter AI 1" />
+[![Watch the video](/demo.png)](https://youtu.be/-OW1q_Ykw5g)
 
 </br>
 
