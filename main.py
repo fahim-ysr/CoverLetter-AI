@@ -4,6 +4,9 @@ from portfolio import Portfolio
 from text_cleaner import text_cleaner
 from langchain_community.document_loaders import WebBaseLoader
 
+
+
+
 def create_app(llm, portfolio, text_cleaner):
     st.set_page_config(
         layout= "wide", 
@@ -11,6 +14,27 @@ def create_app(llm, portfolio, text_cleaner):
         page_icon= "🌐",
         initial_sidebar_state = "expanded"
         )
+
+    # st.markdown(
+    #     """
+    #     <style>
+        
+    #     .stApp {
+    #         background: linear-gradient(45deg, #000000, #434343);
+    #         background-size: 200% 200%;
+    #         animation: gradientBG 5s ease infinite;
+    #         }
+            
+    #     @keyframes gradientBG {
+    #         0% {background-position: 0% 50%;}
+    #         50% {background-position: 100% 50%;}
+    #         100% {background-position: 0% 50%;}
+    #         }
+
+    #     </style>
+    #     """,
+    #     unsafe_allow_html=True
+    #     )
     
     st.image("./logo.png", width=150)
     
@@ -65,7 +89,7 @@ def create_app(llm, portfolio, text_cleaner):
                     email = llm.write_email(job, portfolio_urls)
                     st.success("🎉 Your cover letter is ready!")
                     st.markdown("#### Generated Cover Letter")
-                    st.code(email, language= "markdown")
+                    st.code(email, language= "markdown", wrap_lines=True)
 
             except Exception as e:
                 st.error(f"An error has occured!: {e}")
