@@ -1,9 +1,13 @@
 # Importing modules
 
 # For Streamlit SQLite3 compatibility
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    # Running locally, use system sqlite3
+    pass
 
 import streamlit as st
 from pipeline import Pipeline
