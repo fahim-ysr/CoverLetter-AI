@@ -4,14 +4,31 @@ from langchain_groq import ChatGroq
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-
-
-# Extracting the key
 import os                                                                          
 from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
-load_dotenv(Path(".env.local"))
-KEY = os.getenv("GROQ_API_KEY")
+import streamlit as sl
+
+
+# # Extracting the key
+env_path = Path(".env.local")
+if env_path:
+    load_dotenv(env_path)
+
+
+# Extracting the API key
+def get_api_key():
+    # Tries loading the key from Streamlit secrets
+    try:
+        return st.secrets["GROQ_API_KEY"]
+    # If not then loads the key locally
+    except:
+        return os.getenv("GROQ_API_KEY")
+
+KEY = get_api_key()
+
+if not KEY:
+    raise ValueError("GROQ_API_KEY not found! Please check yout '.env.local' file or Streamlit secrets.")
 
 
 # Creating a pipeline
