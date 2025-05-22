@@ -1,3 +1,10 @@
+# Importing modules
+
+# For Streamlit SQLite3 compatibility
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from pipeline import Pipeline
 from portfolio import Portfolio
